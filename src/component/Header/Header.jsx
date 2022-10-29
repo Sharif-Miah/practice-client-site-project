@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import InputField from '../InputField/InputField';
 
 const Header = () => {
     const [users, setUser] = useState([]);
@@ -11,6 +12,7 @@ const Header = () => {
 
     return (
         <div>
+            <InputField />
             <h1>User length {users.length}</h1>
             <div>
                 {
